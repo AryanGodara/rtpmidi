@@ -1,0 +1,4 @@
+(lang dune 3.9)
+(name rtpmidi)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (rtpmidi)))

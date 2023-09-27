@@ -1,0 +1,4 @@
+(executable
+ (public_name rtpmidi)
+ (name main)
+ (libraries rtpmidi portmidi runtime_events logs.lwt lwt stdio lwt.unix str))

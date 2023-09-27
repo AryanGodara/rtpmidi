@@ -1,0 +1,117 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /Users/aryan/Developer/playground/rtpmidi
+# Auto-detected concurrency: 10
+$ /Users/aryan/.opam/cardioproj/bin/ocamlc.opt -config > /var/folders/tq/9l9tk0xj3kb8h21rx7bj6kmw0000gn/T/dune_089a21_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/Users/aryan/.opam/cardioproj/bin"
+#  ; ocaml = Ok External "/Users/aryan/.opam/cardioproj/bin/ocaml"
+#  ; ocamlc = External "/Users/aryan/.opam/cardioproj/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/aryan/.opam/cardioproj/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/aryan/.opam/cardioproj/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok External "/Users/aryan/.opam/cardioproj/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/Users/aryan/.opam/cardioproj/lib/ocaml:/Users/aryan/.opam/cardioproj/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/aryan/.opam/cardioproj/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/aryan/Developer/playground/rtpmidi"
+#        ; "INSIDE_DUNE" :
+#            "/Users/aryan/Developer/playground/rtpmidi/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/aryan/Developer/playground/rtpmidi/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/aryan/Developer/playground/rtpmidi/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/aryan/Developer/playground/rtpmidi/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/Users/aryan/.opam/cardioproj/lib/ocaml"
+#      ; External "/Users/aryan/.opam/cardioproj/lib"
+#      ]
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "5.0.0"
+#      ; standard_library_default = "/Users/aryan/.opam/cardioproj/lib/ocaml"
+#      ; standard_library = "/Users/aryan/.opam/cardioproj/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "arm64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "cc"; "-c"; "-Wno-trigraphs" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "aarch64-apple-darwin22.5.0"
+#      ; target = "aarch64-apple-darwin22.5.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X032"
+#      ; cmi_magic_number = "Caml1999I032"
+#      ; cmo_magic_number = "Caml1999O032"
+#      ; cma_magic_number = "Caml1999A032"
+#      ; cmx_magic_number = "Caml1999Y032"
+#      ; cmxa_magic_number = "Caml1999Z032"
+#      ; ast_impl_magic_number = "Caml1999M032"
+#      ; ast_intf_magic_number = "Caml1999N032"
+#      ; cmxs_magic_number = "Caml1999D032"
+#      ; cmt_magic_number = "Caml1999T032"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/aryan/.opam/cardioproj/bin/ocamldep.opt -modules -impl bin/rtpmidi.ml) > _build/default/bin/.main.eobjs/dune__exe__Rtpmidi.impl.d
+$ (cd _build/default && /Users/aryan/.opam/cardioproj/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /Users/aryan/.opam/cardioproj/lib/base -I /Users/aryan/.opam/cardioproj/lib/base/base_internalhash_types -I /Users/aryan/.opam/cardioproj/lib/base/caml -I /Users/aryan/.opam/cardioproj/lib/base/md5 -I /Users/aryan/.opam/cardioproj/lib/base/shadow_stdlib -I /Users/aryan/.opam/cardioproj/lib/base_bigstring -I /Users/aryan/.opam/cardioproj/lib/base_quickcheck -I /Users/aryan/.opam/cardioproj/lib/base_quickcheck/ppx_quickcheck/runtime -I /Users/aryan/.opam/cardioproj/lib/bigarray-compat -I /Users/aryan/.opam/cardioproj/lib/bin_prot -I /Users/aryan/.opam/cardioproj/lib/bin_prot/shape -I /Users/aryan/.opam/cardioproj/lib/bytes -I /Users/aryan/.opam/cardioproj/lib/core -I /Users/aryan/.opam/cardioproj/lib/core/base_for_tests -I /Users/aryan/.opam/cardioproj/lib/core/command -I /Users/aryan/.opam/cardioproj/lib/core/filename_base -I /Users/aryan/.opam/cardioproj/lib/core/heap_block -I /Users/aryan/.opam/cardioproj/lib/core/univ_map -I /Users/aryan/.opam/cardioproj/lib/core/validate -I /Users/aryan/.opam/cardioproj/lib/core_kernel -I /Users/aryan/.opam/cardioproj/lib/ctypes -I /Users/aryan/.opam/cardioproj/lib/fieldslib -I /Users/aryan/.opam/cardioproj/lib/int_repr -I /Users/aryan/.opam/cardioproj/lib/integers -I /Users/aryan/.opam/cardioproj/lib/jane-street-headers -I /Users/aryan/.opam/cardioproj/lib/logs -I /Users/aryan/.opam/cardioproj/lib/lwt -I /Users/aryan/.opam/cardioproj/lib/lwt/unix -I /Users/aryan/.opam/cardioproj/lib/ocaml/runtime_events -I /Users/aryan/.opam/cardioproj/lib/ocaml/str -I /Users/aryan/.opam/cardioproj/lib/ocaml/threads -I /Users/aryan/.opam/cardioproj/lib/ocaml/unix -I /Users/aryan/.opam/cardioproj/lib/ocplib-endian -I /Users/aryan/.opam/cardioproj/lib/ocplib-endian/bigstring -I /Users/aryan/.opam/cardioproj/lib/parsexp -I /Users/aryan/.opam/cardioproj/lib/portmidi -I /Users/aryan/.opam/cardioproj/lib/portmidi/c -I /Users/aryan/.opam/cardioproj/lib/portmidi/c_function_descriptions -I /Users/aryan/.opam/cardioproj/lib/portmidi/c_type_descriptions -I /Users/aryan/.opam/cardioproj/lib/ppx_assert/runtime-lib -I /Users/aryan/.opam/cardioproj/lib/ppx_bench/runtime-lib -I /Users/aryan/.opam/cardioproj/lib/ppx_compare/runtime-lib -I /Users/aryan/.opam/cardioproj/lib/ppx_enumerate/runtime-lib -I /Users/aryan/.opam/cardioproj/lib/ppx_expect/collector -I /Users/aryan/.opam/cardioproj/lib/ppx_expect/common -I /Users/aryan/.opam/cardioproj/lib/ppx_expect/config -I /Users/aryan/.opam/cardioproj/lib/ppx_expect/config_types -I /Users/aryan/.opam/cardioproj/lib/ppx_hash/runtime-lib -I /Users/aryan/.opam/cardioproj/lib/ppx_here/runtime-lib -I /Users/aryan/.opam/cardioproj/lib/ppx_inline_test/config -I /Users/aryan/.opam/cardioproj/lib/ppx_inline_test/runtime-lib -I /Users/aryan/.opam/cardioproj/lib/ppx_log/types -I /Users/aryan/.opam/cardioproj/lib/ppx_module_timer/runtime -I /Users/aryan/.opam/cardioproj/lib/ppx_sexp_conv/runtime-lib -I /Users/aryan/.opam/cardioproj/lib/ppx_stable_witness/runtime -I /Users/aryan/.opam/cardioproj/lib/ppx_stable_witness/stable_witness -I /Users/aryan/.opam/cardioproj/lib/sexplib -I /Users/aryan/.opam/cardioproj/lib/sexplib0 -I /Users/aryan/.opam/cardioproj/lib/splittable_random -I /Users/aryan/.opam/cardioproj/lib/stdio -I /Users/aryan/.opam/cardioproj/lib/stdlib-shims -I /Users/aryan/.opam/cardioproj/lib/time_now -I /Users/aryan/.opam/cardioproj/lib/typerep -I /Users/aryan/.opam/cardioproj/lib/variantslib -I lib/.rtpmidi.objs/byte -I lib/.rtpmidi.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Rtpmidi.cmx -c -impl bin/rtpmidi.ml)
+$ (cd _build/default && /Users/aryan/.opam/cardioproj/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/rtpmidi.cmxa /Users/aryan/.opam/cardioproj/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /Users/aryan/.opam/cardioproj/lib/base/base_internalhash_types /Users/aryan/.opam/cardioproj/lib/base/caml/caml.cmxa /Users/aryan/.opam/cardioproj/lib/sexplib0/sexplib0.cmxa /Users/aryan/.opam/cardioproj/lib/base/shadow_stdlib/shadow_stdlib.cmxa /Users/aryan/.opam/cardioproj/lib/base/base.cmxa -I /Users/aryan/.opam/cardioproj/lib/base /Users/aryan/.opam/cardioproj/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_compare/runtime-lib/ppx_compare_lib.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_here/runtime-lib/ppx_here_lib.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_assert/runtime-lib/ppx_assert_lib.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_bench/runtime-lib/ppx_bench_lib.cmxa /Users/aryan/.opam/cardioproj/lib/base/md5/md5_lib.cmxa /Users/aryan/.opam/cardioproj/lib/fieldslib/fieldslib.cmxa /Users/aryan/.opam/cardioproj/lib/variantslib/variantslib.cmxa /Users/aryan/.opam/cardioproj/lib/bin_prot/shape/bin_shape.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_stable_witness/stable_witness/stable_witness.cmxa /Users/aryan/.opam/cardioproj/lib/bin_prot/bin_prot.cmxa -I /Users/aryan/.opam/cardioproj/lib/bin_prot /Users/aryan/.opam/cardioproj/lib/ppx_inline_test/config/inline_test_config.cmxa /Users/aryan/.opam/cardioproj/lib/jane-street-headers/jane_street_headers.cmxa /Users/aryan/.opam/cardioproj/lib/time_now/time_now.cmxa -I /Users/aryan/.opam/cardioproj/lib/time_now /Users/aryan/.opam/cardioproj/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cmxa /Users/aryan/.opam/cardioproj/lib/stdio/stdio.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_module_timer/runtime/ppx_module_timer_runtime.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_stable_witness/runtime/ppx_stable_witness_runtime.cmxa /Users/aryan/.opam/cardioproj/lib/typerep/typerep_lib.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_expect/common/expect_test_common.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_expect/config_types/expect_test_config_types.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_expect/collector/expect_test_collector.cmxa -I /Users/aryan/.opam/cardioproj/lib/ppx_expect/collector /Users/aryan/.opam/cardioproj/lib/ppx_expect/config/expect_test_config.cmxa /Users/aryan/.opam/cardioproj/lib/parsexp/parsexp.cmxa /Users/aryan/.opam/cardioproj/lib/sexplib/sexplib.cmxa /Users/aryan/.opam/cardioproj/lib/ppx_log/types/ppx_log_types.cmxa /Users/aryan/.opam/cardioproj/lib/splittable_random/splittable_random.cmxa /Users/aryan/.opam/cardioproj/lib/base_quickcheck/base_quickcheck.cmxa /Users/aryan/.opam/cardioproj/lib/base_quickcheck/ppx_quickcheck/runtime/ppx_quickcheck_runtime.cmxa /Users/aryan/.opam/cardioproj/lib/int_repr/int_repr.cmxa /Users/aryan/.opam/cardioproj/lib/base_bigstring/base_bigstring.cmxa -I /Users/aryan/.opam/cardioproj/lib/base_bigstring /Users/aryan/.opam/cardioproj/lib/core/base_for_tests/base_for_tests.cmxa /Users/aryan/.opam/cardioproj/lib/core/filename_base/filename_base.cmxa /Users/aryan/.opam/cardioproj/lib/core/univ_map/univ_map.cmxa /Users/aryan/.opam/cardioproj/lib/core/command/command.cmxa /Users/aryan/.opam/cardioproj/lib/core/heap_block/heap_block.cmxa -I /Users/aryan/.opam/cardioproj/lib/core/heap_block /Users/aryan/.opam/cardioproj/lib/core/validate/validate.cmxa /Users/aryan/.opam/cardioproj/lib/core/core.cmxa -I /Users/aryan/.opam/cardioproj/lib/core /Users/aryan/.opam/cardioproj/lib/core_kernel/core_kernel.cmxa /Users/aryan/.opam/cardioproj/lib/bigarray-compat/bigarray_compat.cmxa /Users/aryan/.opam/cardioproj/lib/stdlib-shims/stdlib_shims.cmxa /Users/aryan/.opam/cardioproj/lib/integers/integers.cmxa -I /Users/aryan/.opam/cardioproj/lib/integers /Users/aryan/.opam/cardioproj/lib/ctypes/ctypes.cmxa -I /Users/aryan/.opam/cardioproj/lib/ctypes /Users/aryan/.opam/cardioproj/lib/portmidi/c_type_descriptions/portmidi_c_type_descriptions.cmxa /Users/aryan/.opam/cardioproj/lib/portmidi/c_function_descriptions/portmidi_c_function_descriptions.cmxa /Users/aryan/.opam/cardioproj/lib/portmidi/c/portmidi_c.cmxa -I /Users/aryan/.opam/cardioproj/lib/portmidi/c /Users/aryan/.opam/cardioproj/lib/portmidi/portmidi.cmxa /Users/aryan/.opam/cardioproj/lib/ocaml/runtime_events/runtime_events.cmxa /Users/aryan/.opam/cardioproj/lib/logs/logs.cmxa /Users/aryan/.opam/cardioproj/lib/lwt/lwt.cmxa /Users/aryan/.opam/cardioproj/lib/logs/logs_lwt.cmxa /Users/aryan/.opam/cardioproj/lib/ocplib-endian/ocplib_endian.cmxa /Users/aryan/.opam/cardioproj/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cmxa /Users/aryan/.opam/cardioproj/lib/ocaml/unix/unix.cmxa /Users/aryan/.opam/cardioproj/lib/ocaml/threads/threads.cmxa /Users/aryan/.opam/cardioproj/lib/lwt/unix/lwt_unix.cmxa -I /Users/aryan/.opam/cardioproj/lib/lwt/unix /Users/aryan/.opam/cardioproj/lib/ocaml/str/str.cmxa bin/.main.eobjs/native/dune__exe.cmx bin/.main.eobjs/native/dune__exe__List_devices.cmx bin/.main.eobjs/native/dune__exe__Midi_util.cmx bin/.main.eobjs/native/dune__exe__Midi.cmx bin/.main.eobjs/native/dune__exe__Rtpmidi.cmx bin/.main.eobjs/native/dune__exe__Play.cmx bin/.main.eobjs/native/dune__exe__Main.cmx)
